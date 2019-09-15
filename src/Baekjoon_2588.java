@@ -11,7 +11,6 @@ public class Baekjoon_2588 {
 		Scanner scan = new Scanner(System.in);
 		number1 = scan.nextInt();
 		number2 = scan.next();
-		String str[] = number2.split();
 
 	
 	}
