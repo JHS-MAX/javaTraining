@@ -25,6 +25,7 @@ public class Main {
 			if(array[i] < min)
 				min = array[i];
 		}
-	}
 
+		System.out.println(min + " " + max);
+	}
 }
