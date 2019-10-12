@@ -8,19 +8,16 @@ public class Baekjoon_3052 {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		int count = 0;
-		int number[] = new int[10];
-		int remainderOfNumber[] = new int[10];
+		int count=0;
+		int RemainderOfNumber[] = new int[42];
 		
-		for(int i=0; i<number.length; i++) {
-			number[i] = scan.nextInt();
-			remainderOfNumber[i] = number[i] % 42;
-		}
-		
-		for(int i=0; i<number.length; i++)
-			if(number[i] != remainderOfNumber[i]) count++;
+		for(int i=0; i<10; i++)
+			RemainderOfNumber[scan.nextInt() % 42]++;
 				
-		System.out.println(count);
+	    for(int i=0; i<RemainderOfNumber.length; i++)
+		 if(RemainderOfNumber[i] > 0) count++;
+					
+	    System.out.println(count);
 				
 	}	
 }
