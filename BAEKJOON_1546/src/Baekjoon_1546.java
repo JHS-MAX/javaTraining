@@ -21,17 +21,13 @@ public class Baekjoon_1546 {
 				if(max < score[i]) max = score[i];
 			}
 
+			if(max != 0) {
 			for(int i=0; i<score.length; i++) {
 				score[i] = score[i]/max * 100;
 				sum += score[i];
 			}
-
-			if(sum == 0) {
-			System.out.println("합=0");
-			return;
-			}
-			System.out.println(sum / N);
+             System.out.println(sum / N);
+			} else System.out.println("모든 점수가 0점 입니다");
 		} else System.out.println("과목의 수는 1000을 초과 할수 없습니다.");
-		System.out.println(0/50);
 	}
 }
